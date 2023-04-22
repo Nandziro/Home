@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(https://pibig.info/uploads/posts/2022-12/1669910493_1-pibig-info-p-kosmos-zadnii-fon-krasivo-1.jpg);
+}
+                                        /*HEADER*/
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(20px);
+    z-index: 100;
+    animation: header 2s linear;
+}
+@keyframes header {
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.header__body {
+    margin:0 auto;
+    border: 1px solid #000;
+    align-items: center;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo {
+    border: 1px solid #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo {
+    width: 50px;
+    transition: 0.5s;
+}
+.logo__text {
+}
+.logo__text:hover {
+    color: blue;
+    cursor: pointer;
+}
+.header__menu {
+    display: flex;
+    border: 1px solid #000;
+}
+.header__menu-item {
+    margin-left: 30px;
+}
+.header__menu-item a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+.header__menu-item a:hover{
+    color: red;
+}
+.logo:hover{
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+.burger {
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+.burger_line {
+}
+                                                    /*  MAIN*/
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid;
+    padding: 20px
+}
+.music__bar {
+    height: 120px;
+    width: 70px;
+    backdrop-filter: blur(30px);
+    z-index: 50;
+    position: fixed;
+    left: 0;
+    top: 300px;
+    overflow: hidden;
+    transition: 0.7s;
+    border-radius: 0 70px 70px 0;
+    display: flex;
+    align-items: center;
+}
+.music__bar:hover{
+    width: 450px;
+}
+.icon {
+    font-size: 30px;
+    top: 35%;
+    right: 20px;
+    position: absolute;
+    transition: 1s;
+}
+.icon:hover{
+    transform: rotate(360deg);
+}
+.fa-solid {
+
+}
+.fa-music {
+}
+.audio {
+    margin-left: 70px;
+}
+.block__pictures {
+    position: relative;
+    height: 400px;
+    margin-top: 140px;
+    overflow: hidden;
+}
+.image {
+    position: absolute;
+    width: 400px;
+    z-index: 1;
+}
+.image:nth-child(1){
+    border: 20px solid rgba(123, 116, 116, 0);
+    height: 300px;
+    right: 0;
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    animation:one 2s linear;
+}
+@keyframes one {
+    0%{
+        transform: translateX(600px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.image:nth-child(2){
+    border: 20px solid rgb(123, 116, 116);
+    height: 350px;
+    left: 30%;
+    border-radius: 20px;
+    animation: two 3s linear;
+}
+@keyframes two {
+    0%{
+        transform: translateY(600px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.image:nth-child(3){
+    border: 20px solid rgb(123, 116, 116);
+    border-radius: 20px;
+    top: 0px;
+    left: -10px;
+    width: 350px;
+    animation: three 2s linear;
+}
+@keyframes three {
+    0%{
+        transform: translateX(-600px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.block {
+}
+.block_info-1 {
+    background-color: forestgreen;
+    border: 20px solid rgb(96, 92, 92);
+    border-radius: 20px;
+    margin: 0 auto ;
+    animation: b-one 3s linear;
+}
+@keyframes b-one {
+    0%{
+        transform: translateX(1000px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.text-1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkblue;
+}
+.block_info-2 {
+    background-color: forestgreen;
+    border: 20px solid rgb(96, 92, 92);
+    border-radius: 20px;
+    margin: 10px auto ;
+    animation: b-two 3s linear;
+}
+@keyframes b-two {
+    0%{
+        transform: translateX(-1000px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.text-2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: red;
+}
+.Zag {
+    font-weight: 900px;
+    color: aqua;
+    font-size: 50px;
+    text-align: center
+}
+.block_info-3 {
+    background-color: forestgreen;
+    border: 20px solid rgb(96, 92, 92);
+    border-radius: 20px;
+    margin: 10px auto ;
+    animation: b-three 3s linear;
+}
+@keyframes b-three {
+    0%{
+        transform: translateX(1000px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.text-3{
+    font-family: cursive;
+    color: gold;
+}
+                                        /*ADAPTIVE*/
+                                        /*ADAPTIVE MIDDLE */
+@media(max-width:767px){
+    .block__pictures {
+        position: relative;
+        height: 1000px;
+        margin-top: 140px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #000;
+    }
+    .image {
+        left: 0px;
+        position: relative;
+        width: 400px;
+        z-index: 1;
+    }
+    .image:nth-child(2){
+        left: 0%;
+        animation: after 5s linear;
+    }
+    @keyframes after {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .Zag {
+        font-weight: 900px;
+        color: aqua;
+        font-size: 50px;
+        text-align: center
+    }
+}
+                                        /*ADAPTIVE HEADER*/
+                                        /*ADAPTIVE MAIN*/
+@media(max-width:575px){
+    .header__menu {
+        display: none;
+    }
+    .music__bar {
+        display: none;
+    }
+    .burger {
+        display: block;
+        position: relative;
+    }
+    .burger_line {
+        position: absolute;
+        width: 50px;
+        height: 3px;
+        top: 20px;
+        background-color: #fff;
+    }
+    .burger_line::before{
+        content: '';
+        width: 50px;
+        height: 3px;
+        top: 15px;
+        position: absolute;
+        background-color: #fff;
+    }
+    .burger_line::after{
+        content: '';
+        width: 50px;
+        bottom: 15px;
+        height: 3px;
+        position: absolute;
+        background-color: #fff;
+    }
+}

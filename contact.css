@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(https://pibig.info/uploads/posts/2022-12/1669910493_1-pibig-info-p-kosmos-zadnii-fon-krasivo-1.jpg);
+}
+.header{
+    background-color: rgb(116, 114, 114);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    width: 100%;
+}

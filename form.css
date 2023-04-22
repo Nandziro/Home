@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(https://pibig.info/uploads/posts/2022-12/1669910493_1-pibig-info-p-kosmos-zadnii-fon-krasivo-1.jpg);
+}
+.header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(20px);
+    z-index: 100;
+    animation: header 2s linear;
+}
+@keyframes header {
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.header__body {
+    margin:0 auto;
+    border: 1px solid #000;
+    align-items: center;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo {
+    border: 1px solid #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo {
+    width: 50px;
+    transition: 0.5s;
+}
+.logo__text {
+}
+.logo__text:hover {
+    color: blue;
+    cursor: pointer;
+}
+.header__menu {
+    display: flex;
+    border: 1px solid #000;
+}
+.header__menu-item {
+    margin-left: 30px;
+}
+.header__menu-item a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+.header__menu-item a:hover{
+    color: red;
+}
+.logo:hover{
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+.burger {
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+.burger_line {
+}
+.box {
+    width: 400px;
+    height: 500px;
+    backdrop-filter: blur(20px);
+    margin: 0 auto;
+    position: relative;
+    border-radius: 20px;
+    bottom: -150px;
+}
+.box__close {
+    position: absolute;
+    right: 0;
+    font-size: 25px;
+    top: 0;
+    background-color: rgb(43, 47, 97);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 0 20px 0 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.box__close:hover{
+    background-color: cadetblue;
+}
+.box-title {
+    font-size: 33px;
+    text-align: center;
+    color: rgb(35, 34, 34);
+}
+.box__form {
+    top: 70px;
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #000;
+    height: 50px;
+    margin: 35px 0;
+}
+.box__icon {
+    position: absolute;
+    right: 0;
+}
+.box__label {
+    position: absolute;
+    left: 0;
+}
+.box__input{
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+.box_footer {
+}
+.box_remember {
+}
+.checkbox {
+}
+.box__button {
+}
+.box__under {
+}
+.under_text_1 {
+    display: flex;
+}
+.under_register {
+}
+                                        /*ADAPTIVE*/
+@media(max-width:575px){
+    .header__menu {
+        display: none;
+    }
+    .music__bar {
+        display: none;
+    }
+    .burger {
+        display: block;
+        position: relative;
+    }
+    .burger_line {
+        position: absolute;
+        width: 50px;
+        height: 3px;
+        top: 20px;
+        background-color: #fff;
+    }
+    .burger_line::before{
+        content: '';
+        width: 50px;
+        height: 3px;
+        top: 15px;
+        position: absolute;
+        background-color: #fff;
+    }
+    .burger_line::after{
+        content: '';
+        width: 50px;
+        bottom: 15px;
+        height: 3px;
+        position: absolute;
+        background-color: #fff;
+    }
+}
